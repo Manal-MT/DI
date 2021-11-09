@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="Formulario" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="588.0" prefWidth="623.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculadoraproyecto.HelloController">
+   <children>
+      <TextField layoutX="321.0" layoutY="97.0" prefHeight="24.0" prefWidth="241.0" />
+      <TextField layoutX="321.0" layoutY="146.0" prefHeight="24.0" prefWidth="241.0" />
+      <Label layoutX="246.0" layoutY="101.0" text="Nombre" />
+      <Label layoutX="245.0" layoutY="150.0" text="Apellido" />
+      <Label layoutX="220.0" layoutY="220.0" text="Comentario" />
+      <TextArea layoutX="321.0" layoutY="190.0" prefHeight="108.0" prefWidth="241.0" />
+      <RadioButton fx:id="rhombre" layoutX="321.0" layoutY="321.0" mnemonicParsing="false" text="Hombre">
+         <toggleGroup>
+            <ToggleGroup fx:id="genero1" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="rmujer" layoutX="500.0" layoutY="321.0" mnemonicParsing="false" text="Mujer">
+         <toggleGroup>
+            <ToggleGroup fx:id="genero2" />
+         </toggleGroup></RadioButton>
+      <Label fx:id="genero" layoutX="248.0" layoutY="322.0" text="Género" />
+      <Label layoutX="249.0" layoutY="360.0" text="Ciudad" />
+      <Label layoutX="175.0" layoutY="407.0" text="Sistema operativo" />
+      <Spinner fx:id="horas" editable="true" layoutX="321.0" layoutY="442.0" prefHeight="24.0" prefWidth="241.0" />
+      <Label layoutX="38.0" layoutY="446.0" text="Horas que pasas delante del ordenador" />
+      <DatePicker layoutX="321.0" layoutY="490.0" prefHeight="24.0" prefWidth="241.0" />
+      <Label layoutX="178.0" layoutY="494.0" text="Fecha de realizar" />
+      <Button layoutX="286.0" layoutY="544.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="96.0" text="Enviar" />
+      <ComboBox fx:id="sistemaOperativo" layoutX="322.0" layoutY="403.0" prefHeight="24.0" prefWidth="241.0" />
+      <ComboBox fx:id="cmbCiudad" layoutX="322.0" layoutY="356.0" prefHeight="24.0" prefWidth="241.0" />
+   </children>
+</Pane>
